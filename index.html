@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ST Event Management | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-glass-cheers"></i>
+            </div>
+            ST Event Management
+        </a>
+
+        <div class="search-nav" style="flex: 1; max-width: 400px; margin: 0 20px;">
+            <i class="fa-solid fa-magnifying-glass" style="color: var(--text-secondary);"></i>
+            <input type="text" id="searchInput" placeholder="Search events..."
+                style="width: 100%; border: none; background: transparent; outline: none; padding: 10px; font-size: 1rem; color: var(--text-primary);">
+        </div>
+
+        <nav class="nav-links">
+            <a href="about.html" class="btn btn-outline"><i class="fa-regular fa-address-card"></i> About Us</a>
+
+            <a href="login.html" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i> Place Order</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="filters animate-in delay-1">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="marquee">Marquee</button>
+            <button class="filter-btn" data-filter="birthday">Birthday</button>
+            <button class="filter-btn" data-filter="babyshower">Baby Shower</button>
+        </div>
+
+        <div class="event-grid" id="event-grid">
+            <!-- Marquee Events -->
+            <a href="event.html?category=marquee&img=./images/marque%201.jpeg" class="event-card animate-in delay-1"
+                data-category="marquee">
+                <div class="card-image placeholder" style="position: relative;">
+                    <img src="./images/marque 1.jpeg" alt="Marquee Setup 1"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;"
+                        onerror="this.style.display='none';">
+                    <span
+                        style="color: white; font-size: 1.2rem; font-weight: bold; position: relative; z-index: 0;">Image
+                        1</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Marquee Event Setup 1</h3>
+                    <p class="card-details">A beautiful and simple setup for your marquee event. Includes basic
+                        decoration and seating.</p>
+                    <div class="card-footer">
+                        <span class="event-date"><i class="fa-regular fa-calendar"></i> Available Now</span>
+                        <span class="btn btn-outline" style="padding: 5px 12px; font-size: 0.8rem;">View Details</span>
+                    </div>
+                </div>
+            </a>
+            <a href="event.html?category=marquee&img=./images/marque%202.jpeg" class="event-card animate-in delay-2"
+                data-category="marquee">
+                <div class="card-image placeholder" style="position: relative;">
+                    <img src="./images/marque 2.jpeg" alt="Marquee Setup 2"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;"
+                        onerror="this.style.display='none';">
+                    <span
+                        style="color: white; font-size: 1.2rem; font-weight: bold; position: relative; z-index: 0;">Image
+                        2</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Marquee Event Setup 2</h3>
+                    <p class="card-details">A beautiful and simple setup for your marquee event. Includes basic
+                        decoration and seating.</p>
+                    <div class="card-footer">
+                        <span class="event-date"><i class="fa-regular fa-calendar"></i> Available Now</span>
+                        <span class="btn btn-outline" style="padding: 5px 12px; font-size: 0.8rem;">View Details</span>
+                    </div>
+                </div>
+            </a>
+            <a href="event.html?category=marquee&img=./images/marque%203.jpeg" class="event-card animate-in delay-3"
+                data-category="marquee">
+                <div class="card-image placeholder" style="position: relative;">
+                    <img src="./images/marque 3.jpeg" alt="Marquee Setup 3"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;"
+                        onerror="this.style.display='none';">
+                    <span
+                        style="color: white; font-size: 1.2rem; font-weight: bold; position: relative; z-index: 0;">Image
+                        3</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Marquee Event Setup 3</h3>
+                    <p class="card-details">A beautiful and simple setup for your marquee event. Includes basic
+                        decoration and seating.</p>
+                    <div class="card-footer">
+                        <span class="event-date"><i class="fa-regular fa-calendar"></i> Available Now</span>
+                        <span class="btn btn-outline" style="padding: 5px 12px; font-size: 0.8rem;">View Details</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Birthday Events -->
+            <a href="event.html?category=birthday&img=images/Birthday%201.jpeg" class="event-card animate-in delay-4"
+                data-category="birthday">
+                <div class="card-image placeholder" style="position: relative;">
+                    <img src="images/Birthday 1.jpeg" alt="Birthday Party Setup 1"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;"
+                        onerror="this.style.display='none';">
+                    <span
+                        style="color: white; font-size: 1.2rem; font-weight: bold; position: relative; z-index: 0;">Image
+                        1</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Birthday Party Setup 1</h3>
+                    <p class="card-details">A beautiful and simple setup for your birthday party. Includes basic
+                        decoration and seating.</p>
+                    <div class="card-footer">
+                        <span class="event-date"><i class="fa-regular fa-calendar"></i> Available Now</span>
+                        <span class="btn btn-outline" style="padding: 5px 12px; font-size: 0.8rem;">View Details</span>
+                    </div>
+                </div>
+            </a>
+            <a href="event.html?category=birthday&img=images/Birthday%202.jpeg" class="event-card animate-in delay-5"
+                data-category="birthday">
+                <div class="card-image placeholder" style="position: relative;">
+                    <img src="images/Birthday 2.jpeg" alt="Birthday Party Setup 2"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;"
+                        onerror="this.style.display='none';">
+                    <span
+                        style="color: white; font-size: 1.2rem; font-weight: bold; position: relative; z-index: 0;">Image
+                        2</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Birthday Party Setup 2</h3>
+                    <p class="card-details">A beautiful and simple setup for your birthday party. Includes basic
+                        decoration and seating.</p>
+                    <div class="card-footer">
+                        <span class="event-date"><i class="fa-regular fa-calendar"></i> Available Now</span>
+                        <span class="btn btn-outline" style="padding: 5px 12px; font-size: 0.8rem;">View Details</span>
+                    </div>
+                </div>
+            </a>
+            <a href="event.html?category=birthday&img=images/Birthday%203.jpeg" class="event-card animate-in delay-6"
+                data-category="birthday">
+                <div class="card-image placeholder" style="position: relative;">
+                    <img src="images/Birthday 3.jpeg" alt="Birthday Party Setup 3"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;"
+                        onerror="this.style.display='none';">
+                    <span
+                        style="color: white; font-size: 1.2rem; font-weight: bold; position: relative; z-index: 0;">Image
+                        3</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Birthday Party Setup 3</h3>
+                    <p class="card-details">A beautiful and simple setup for your birthday party. Includes basic
+                        decoration and seating.</p>
+                    <div class="card-footer">
+                        <span class="event-date"><i class="fa-regular fa-calendar"></i> Available Now</span>
+                        <span class="btn btn-outline" style="padding: 5px 12px; font-size: 0.8rem;">View Details</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Baby Shower Events -->
+            <a href="event.html?category=babyshower&img=images/Baby%20shower%201.jpeg"
+                class="event-card animate-in delay-1" data-category="babyshower">
+                <div class="card-image placeholder" style="position: relative;">
+                    <img src="images/Baby shower 1.jpeg" alt="Baby Shower Setup 1"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;"
+                        onerror="this.style.display='none';">
+                    <span
+                        style="color: white; font-size: 1.2rem; font-weight: bold; position: relative; z-index: 0;">Image
+                        1</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Baby Shower Setup 1</h3>
+                    <p class="card-details">A beautiful and simple setup for your baby shower. Includes basic decoration
+                        and seating.</p>
+                    <div class="card-footer">
+                        <span class="event-date"><i class="fa-regular fa-calendar"></i> Available Now</span>
+                        <span class="btn btn-outline" style="padding: 5px 12px; font-size: 0.8rem;">View Details</span>
+                    </div>
+                </div>
+            </a>
+            <a href="event.html?category=babyshower&img=images/Baby%20shower%202.jpeg"
+                class="event-card animate-in delay-2" data-category="babyshower">
+                <div class="card-image placeholder" style="position: relative;">
+                    <img src="images/Baby shower 2.jpeg" alt="Baby Shower Setup 2"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;"
+                        onerror="this.style.display='none';">
+                    <span
+                        style="color: white; font-size: 1.2rem; font-weight: bold; position: relative; z-index: 0;">Image
+                        2</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Baby Shower Setup 2</h3>
+                    <p class="card-details">A beautiful and simple setup for your baby shower. Includes basic decoration
+                        and seating.</p>
+                    <div class="card-footer">
+                        <span class="event-date"><i class="fa-regular fa-calendar"></i> Available Now</span>
+                        <span class="btn btn-outline" style="padding: 5px 12px; font-size: 0.8rem;">View Details</span>
+                    </div>
+                </div>
+            </a>
+            <a href="event.html?category=babyshower&img=images/Baby%20shower%203.jpeg"
+                class="event-card animate-in delay-3" data-category="babyshower">
+                <div class="card-image placeholder" style="position: relative;">
+                    <img src="images/Baby shower 3.jpeg" alt="Baby Shower Setup 3"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;"
+                        onerror="this.style.display='none';">
+                    <span
+                        style="color: white; font-size: 1.2rem; font-weight: bold; position: relative; z-index: 0;">Image
+                        3</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Baby Shower Setup 3</h3>
+                    <p class="card-details">A beautiful and simple setup for your baby shower. Includes basic decoration
+                        and seating.</p>
+                    <div class="card-footer">
+                        <span class="event-date"><i class="fa-regular fa-calendar"></i> Available Now</span>
+                        <span class="btn btn-outline" style="padding: 5px 12px; font-size: 0.8rem;">View Details</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <script>
+            // Filter interaction logic
+            let currentFilter = 'all';
+            let searchQuery = '';
+
+            const cards = document.querySelectorAll('.event-card');
+            const searchInput = document.getElementById('searchInput');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            function filterCards() {
+                cards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    const title = card.querySelector('.card-title').textContent.toLowerCase();
+                    const desc = card.querySelector('.card-details').textContent.toLowerCase();
+
+                    const matchesFilter = currentFilter === 'all' || currentFilter === category;
+                    const matchesSearch = title.includes(searchQuery.toLowerCase()) || desc.includes(searchQuery.toLowerCase());
+
+                    if (matchesFilter && matchesSearch) {
+                        card.style.display = 'flex'; // The cards are flex containers
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+
+            // Search event listener
+            searchInput.addEventListener('input', (e) => {
+                searchQuery = e.target.value;
+                filterCards();
+            });
+
+            // Category filter event listeners
+            buttons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Update active state
+                    buttons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    // Get filter and apply
+                    currentFilter = btn.getAttribute('data-filter');
+                    filterCards();
+                });
+            });
+        </script>
+</body>
+
+</html>
