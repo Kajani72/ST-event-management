@@ -1,0 +1,142 @@
+/* Auth specific styling extends style.css */
+
+.auth-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    /* take up remaining height after header */
+    padding: 60px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Background blob animation for auth pages */
+.auth-wrapper::before {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 8, 128, 0.15) 0%, transparent 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    border-radius: 50%;
+    animation: pulse 10s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        filter: blur(20px);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1.2);
+        filter: blur(40px);
+    }
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    text-align: center;
+}
+
+.auth-title {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    background: linear-gradient(to right, #fff, var(--accent-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.form-control {
+    width: 100%;
+    padding: 14px 16px;
+    background: #ffffff;
+    /* Solid white background for visibility */
+    border: 1px solid #cccccc;
+    /* Clear noticeable border */
+    border-radius: 8px;
+    /* Slightly less rounded */
+    color: var(--text-primary);
+    font-size: 1rem;
+    transition: var(--transition);
+    outline: none;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+    /* Subtle inner shadow */
+}
+
+.form-control:focus {
+    border-color: var(--accent-primary);
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+    /* Standard focus ring */
+}
+
+.form-control::placeholder {
+    color: #999999;
+    /* Darker placeholder for better contrast */
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.auth-btn-secondary {
+    width: 100%;
+    margin-top: 15px;
+    background: transparent;
+    border: 1px solid var(--accent-primary);
+    color: var(--accent-primary);
+}
+
+.auth-links {
+    margin-top: 25px;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.auth-links a {
+    color: var(--accent-primary);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.auth-links a:hover {
+    color: var(--text-primary);
+    text-shadow: 0 0 10px rgba(0, 242, 254, 0.5);
+}
+
+/* Event specifics extra utilities if needed */
+.form-icon {
+    position: absolute;
+    right: 15px;
+    top: 42px;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
